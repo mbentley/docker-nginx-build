@@ -14,11 +14,12 @@ cd /data
 if [ ! -d nginx ]
 then
   hg clone http://hg.nginx.org/nginx/
+  cd nginx
+else
+  cd nginx
+  hg pull --rev default
+  make clean || true
 fi
-cd nginx
-
-hg pull --rev default
-make clean || true
 
 if [ ! -d nginx-dav-ext-module ]
 then
