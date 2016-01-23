@@ -28,9 +28,9 @@ fi
 
 if [ ! -d ngx_http_auth_pam_module-1.2 ]
 then
-  wget https://github.com/stogh/ngx_http_auth_pam_module/archive/v1.4.tar.gz
-  tar zxf v1.4.tar.gz
-  rm v1.4.tar.gz
+  wget "https://github.com/stogh/ngx_http_auth_pam_module/archive/v1.4.tar.gz" -O ngx_http_auth_pam_module-1.4.tar.gz
+  tar zxf ngx_http_auth_pam_module-1.4.tar.gz
+  rm ngx_http_auth_pam_module-1.4.tar.gz
 fi
 
 ./auto/configure \
