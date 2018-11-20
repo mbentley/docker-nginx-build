@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:stretch
 MAINTAINER Matt Bentley <mbentley@mbentley.net>
 
 RUN (apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y wget git mercurial libpcre3-dev build-essential libssl-dev libexpat-dev libpam-dev)
