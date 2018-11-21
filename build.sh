@@ -26,11 +26,11 @@ then
   git clone --depth 1 https://github.com/arut/nginx-dav-ext-module.git
 fi
 
-if [ ! -d ngx_http_auth_pam_module-1.4 ]
+if [ ! -d ngx_http_auth_pam_module-1.5.1 ]
 then
-  wget "https://github.com/stogh/ngx_http_auth_pam_module/archive/v1.4.tar.gz" -O ngx_http_auth_pam_module-1.4.tar.gz
-  tar zxf ngx_http_auth_pam_module-1.4.tar.gz
-  rm ngx_http_auth_pam_module-1.4.tar.gz
+  wget "https://github.com/stogh/ngx_http_auth_pam_module/archive/v1.5.1.tar.gz" -O ngx_http_auth_pam_module-1.5.1.tar.gz
+  tar zxf ngx_http_auth_pam_module-1.5.1.tar.gz
+  rm ngx_http_auth_pam_module-1.5.1.tar.gz
 fi
 
 ./auto/configure \
