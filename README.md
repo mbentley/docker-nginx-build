@@ -1,5 +1,4 @@
-mbentley/nginx-build
-==================
+# mbentley/nginx-build
 
 docker image to build nginx from source
 
